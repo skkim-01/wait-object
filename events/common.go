@@ -7,7 +7,7 @@ import (
 )
 
 var once sync.Once
-var THREAD_TIMEOUT string = "EVENT.TIMEOUT"
+var EVENT_TIMEOUT string = "EVENT.TIMEOUT"
 
 // set event
 func SetEvent(ch chan interface{}, v interface{}) (err error) {

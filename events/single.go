@@ -39,6 +39,6 @@ func WaitForSingleObject(ch chan interface{}, timeout uint64) (retv interface{})
 		return v
 
 	case <-time.After(time.Millisecond * time.Duration(timeout)):
-		return errors.New(THREAD_TIMEOUT)
+		return errors.New(EVENT_TIMEOUT)
 	}
 }
